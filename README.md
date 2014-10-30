@@ -1,0 +1,4 @@
+toast
+=====
+
+Cordova toast plugin
