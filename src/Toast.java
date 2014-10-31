@@ -11,9 +11,9 @@ public class Toast extends CordovaPlugin {
     @Override
     public boolean execute(String action, final JSONArray args, final CallbackContext callbackContext) throws JSONException {
         if (action.equals("show")) {
+            String msg = args.getString(0);
             cordova.getActivity().runOnUiThread(new Runnable(){
                 public void run(){
-                    String msg = args.getString(0);
                     android.widget.Toast toast = android.widget.Toast.makeText(webView.getContext(),msg,android.widget.Toast.LENGTH_SHORT);
                     toast.show();
                     callbackContext.success();
