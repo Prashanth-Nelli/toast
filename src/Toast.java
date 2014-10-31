@@ -9,7 +9,7 @@ import org.json.JSONObject;
 public class Toast extends CordovaPlugin {
 
     @Override
-    public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
+    public boolean execute(String action, final JSONArray args, final CallbackContext callbackContext) throws JSONException {
         if (action.equals("show")) {
             cordova.getActivity().runOnUiThread(new Runnable(){
                 public void run(){
