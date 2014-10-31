@@ -18,16 +18,16 @@ public class Toast extends CordovaPlugin {
                     android.widget.Toast toast = android.widget.Toast.makeText(webView.getContext(),msg,android.widget.Toast.LENGTH_SHORT);
                     switch(pos){
                         case "top":
-                            toast.setGravity(android.view.Gravity.TOP);
+                            toast.setGravity(android.view.Gravity.TOP,0,0);
                             break;
                         case "center":
-                            toast.setGravity(android.view.Gravity.CENTER);
+                            toast.setGravity(android.view.Gravity.CENTER,0,0);
                             break;
                         case "bottom":
-                            toast.setGravity(android.view.Gravity.BOTTOM);
+                            toast.setGravity(android.view.Gravity.BOTTOM,0,0);
                             break;
                         default:
-                            toast.setGravity(android.view.Gravity.CENTER);
+                            toast.setGravity(android.view.Gravity.CENTER,0,0);
                             break;
                     }
                     toast.show();
