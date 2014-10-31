@@ -7,7 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 
-public Class Toast extends CordovaPlugin {
+public class Toast extends CordovaPlugin {
 
    @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
@@ -17,6 +17,7 @@ public Class Toast extends CordovaPlugin {
                     android.widget.Toast toast = android.widget.Toast.makeText(webView.getContext(),"king is awesome",android.widget.Toast.LENGTH_LONG);
                     toast.show();
                     callbackContext.success();
+                    return ;
                 }
             });
             return true;
