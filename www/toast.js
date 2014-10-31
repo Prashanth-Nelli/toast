@@ -1,8 +1,8 @@
-var execute = require('cordova/execute');
+var exec = require('cordova/exec');
 var Toast = {};
 
 Toast.show=function(str,callback){
-	execute(function(){},function(){},"Toast","show",[str]);
+	exec(function(){},function(){},"Toast","show",[str]);
 }
 
 module.exports=Toast;

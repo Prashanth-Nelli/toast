@@ -21,7 +21,7 @@
                 <param name="android-package" value="cp.plugin.toast.Toast" />
              </feature>
         </config-file>
-        <source-file src="src/Toast.java" target-dir="cp/plugin/toast" />
+        <source-file src="src/Toast.java" target-dir="src/cp/plugin/toast" />
 
     </platform>
 
