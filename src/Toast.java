@@ -21,7 +21,7 @@ public class Toast extends CordovaPlugin {
                     callbackContext.success();
                     return ;
                 }
-            })
+            });
             return true;
         }
         return false;
