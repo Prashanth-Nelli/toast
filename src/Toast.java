@@ -16,7 +16,7 @@ public class Toast extends CordovaPlugin {
         if (action.equals("show")) {
             cordova.getActivity().runOnUiThread(new Runnable(){
                 public void run(){
-                    android.widget.Toast toast = android.widget.Toast.makeText(this.cordova.getActivity().getContext(),"king is awesome",android.widget.Toast.LONG_TIME);
+                    android.widget.Toast toast = android.widget.Toast.makeText(this.cordova.getActivity().getContext(),"king is awesome",android.widget.Toast.LENGTH_SHORT);
                     toast.show();
                     callbackContext.success();
                     return ;
