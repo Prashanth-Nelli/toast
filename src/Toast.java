@@ -13,7 +13,8 @@ public class Toast extends CordovaPlugin {
         if (action.equals("show")) {
             cordova.getActivity().runOnUiThread(new Runnable(){
                 public void run(){
-                    android.widget.Toast toast = android.widget.Toast.makeText(webView.getContext(),"king is awesome",android.widget.Toast.LENGTH_SHORT);
+                    String msg = args[0].toString();
+                    android.widget.Toast toast = android.widget.Toast.makeText(webView.getContext(),msg,android.widget.Toast.LENGTH_SHORT);
                     toast.show();
                     callbackContext.success();
                     return ;
