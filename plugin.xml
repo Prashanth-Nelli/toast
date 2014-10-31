@@ -29,8 +29,7 @@
         <param name="android-package" value="org.apache.cordova.toast.Toast" />
       </feature>
     </config-file>
-
-    <source-file src="src/Toast.java" target-dir="org/apache/cordova/toast"/>
+    <source-file src="src/Toast.java" target-dir="src/org/apache/cordova/toast"/>
   </platform>
 
 </plugin>
