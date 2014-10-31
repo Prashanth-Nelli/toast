@@ -1,8 +1,12 @@
 var api = {};
+var Toast ={};
+var exec = require('cordova/exec');
+
 
 api.prototype.show=function(str,callback){
-    cordova.exec(function(){},function(){},"Toast","show",["king is awesome"]);
+    exec(function(){},function(){},"Toast","show",["king is awesome"]);
 }
 
-window.Toast= new api();
+Toast= new api();
 
+module.exports=exports=Toast;
